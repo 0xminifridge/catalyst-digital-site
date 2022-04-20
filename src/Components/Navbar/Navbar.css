@@ -1,0 +1,42 @@
+.navbar-items {
+  height: 80px;
+  border-bottom: 5px solid var(--cd-green);
+  position: sticky;
+  align-items: center;
+  display: flex;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 1rem;
+}
+
+.nav-links {
+  float: right;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  list-style: none;
+  justify-content: end;
+  margin-left: auto;
+}
+
+.contact-btn {
+  float: right;
+  text-align: center;
+  display: flex;
+  background-color: var(--cd-green);
+  border-radius: 0px;
+  padding: 12px 25px;
+  color: black;
+  margin-right: 1rem;
+}
+
+.contact-btn:hover {
+  background-color: var(--cd-dark);
+  color: var(--cd-green);
+  border: 1px solid var(--cd-green);
+}

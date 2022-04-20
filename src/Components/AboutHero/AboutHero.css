@@ -1,0 +1,34 @@
+.about-hero-page {
+  display: inline-flex;
+  color: var(--cd-green);
+  margin-bottom: 80px;
+  align-items: center;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+  grid-template-areas: ". .";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+}
+
+.about-hero-text-holder {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 10rem;
+  font-size: 1.5rem;
+}
+
+.about-hero-content {
+  margin-right: 10rem;
+  color: var(--cd-light);
+}
+
+.about-hero-img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 50%;
+  height: 50%;
+}

@@ -1,0 +1,61 @@
+.contact-page {
+  color: var(--cd-green);
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-items: center;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+  grid-template-areas: ". .";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+}
+
+.contact-header {
+  width: 250px;
+  border-bottom: 2px solid var(--cd-green);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-text-wrapper {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-right: 5rem;
+}
+
+.contact-info-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.team-wrapper {
+  display: inline-flex;
+  padding: 3rem;
+}
+
+.team-img {
+  width: 300px;
+  height: 300px;
+  padding: 4rem;
+}
+
+.team-title {
+  border-bottom: 2px solid var(--cd-green);
+  width: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-name {
+  color: var(--cd-light);
+}
