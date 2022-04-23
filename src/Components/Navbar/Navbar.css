@@ -29,7 +29,7 @@
   text-align: center;
   display: flex;
   background-color: var(--cd-green);
-  border-radius: 0px;
+  border: 1px solid var(--cd-dark);
   padding: 12px 25px;
   color: black;
   margin-right: 1rem;
@@ -39,4 +39,8 @@
   background-color: var(--cd-dark);
   color: var(--cd-green);
   border: 1px solid var(--cd-green);
+}
+
+.navbar-link:hover {
+  border-bottom: 1px solid var(--cd-green);
 }

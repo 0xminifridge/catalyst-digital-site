@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import './Contact.css';
 
 class Contact extends Component {
@@ -12,19 +13,23 @@ class Contact extends Component {
        return (
         <div className="contact-page">
             <div className="contact-wrapper">
-                <div class="contact-text-wrapper">
-                <h1 class="contact-header">CONTACT US</h1>
+                <div className="contact-text-wrapper">
+                <h1 className="contact-header">CONTACT US</h1>
                     <p>Please contact us by phone or email to request our services and for a free consultation.</p>
                 </div>
-                <div class="contact-info-wrapper">
-                    <h4>Office</h4>
-                    <div>901 N Pollard St,
-                        <br/>
-                        Arlington, VA 22203
+                <div className="contact-info-wrapper">
+                    <div className="office-wrapper">
+                        <h4>Office</h4>
+                        <div>901 N Pollard St,
+                            <br/>
+                            Arlington, VA 22203
+                        </div>
                     </div>
+                    <div className="phone-wrapper">
                     <h4>Contact</h4>
                     <div>
-                        catalystdigital3000@gmail.com<br/>214-906-1893
+                        <a href="mailto:catalystdigital3000@gmail.com" target="_blank"><FaEnvelope/> catalystdigital3000@gmail.com</a><br/><FaPhone/> 214-906-1893
+                    </div>
                     </div>
                 </div>
             </div>
@@ -32,7 +37,7 @@ class Contact extends Component {
             <div className="team-wrapper">
                 {this.props.TeamInfo.map((p) => (
                     <div>
-                        <img src={p.imagePath} className="team-img"/>
+                        <img src={p.imagePath} className="team-img" loading='eager'/>
                         <div>
                             <h3 className="team-title">{p.title}</h3>
                             <p className="team-name">{p.name}</p>

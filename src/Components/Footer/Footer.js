@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Footer.css';
 
-class Hero extends Component {
+class Footer extends Component {
     render(){
        return (
         <div className="footer-page">
@@ -11,4 +11,4 @@ class Hero extends Component {
     }
 }
 
-export default Hero;
+export default Footer;
