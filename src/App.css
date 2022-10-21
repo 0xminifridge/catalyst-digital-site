@@ -1,0 +1,16 @@
+:root {
+  --cd-green: #79c1b6;
+  --cd-dark: #000;
+  --cd-light: #fff;
+
+  background-color: var(--cd-dark);
+}
+
+.App {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cd-green);
+}
