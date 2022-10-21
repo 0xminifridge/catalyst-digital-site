@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+
 export default function About() {
   return (
     <>
@@ -9,9 +12,12 @@ export default function About() {
               Build your Web3 goals through smart contracts and interactive
               Dapps
             </h3>
-            <button class="rounded-lg border-2 border-gray-800 px-4 py-2 bg-gray-800 my-4 text-sm md:text-lg font-medium hover:bg-cd-green hover:text-gray-800">
-              Services and Offerings
-            </button>
+            <Link
+              to={{ pathname: "/projects" }}
+              class="w-56 flex flex-row items-center rounded-lg border-2 border-gray-800 px-4 py-2 my-4 text-sm md:text-lg font-medium hover:text-cd-green hover:border-cd-green"
+            >
+              <span class="px-4">See our work</span> <FaArrowRight />
+            </Link>
           </div>
         </div>
       </div>

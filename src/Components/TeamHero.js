@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+
 export default function TeamHero() {
   return (
     <>
@@ -9,9 +12,13 @@ export default function TeamHero() {
               Full stack developers passionate about building adaptable,
               interactive tech to suit your needs
             </h3>
-            <button class="rounded-lg border-2 border-gray-800 px-4 py-2 bg-gray-800 my-4 text-sm md:text-lg font-medium hover:bg-cd-green hover:text-gray-800">
-              Services and Offerings
-            </button>
+            <Link
+              to={{ pathname: "/contact" }}
+              class="w-56 flex flex-row items-center rounded-lg border-2 border-gray-800 px-4 py-2 my-4 text-sm md:text-lg font-medium hover:text-cd-green hover:border-cd-green"
+            >
+              <span class="px-4">Learn more</span>
+              <FaArrowRight />
+            </Link>
           </div>
         </div>
       </div>
