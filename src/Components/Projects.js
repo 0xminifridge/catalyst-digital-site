@@ -35,7 +35,7 @@ export default function Projects() {
   ];
   return (
     <>
-      <div class=" bg-gray-900">
+      <div class="md:h-[100vh] bg-gray-900">
         <div class="flex justify-center flex-col">
           <h1 class="text-3xl text-white m-auto my-4">Featured Work</h1>
           <div class="flex flex-col m-auto">
