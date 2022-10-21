@@ -6,7 +6,7 @@
   background-color: var(--cd-dark);
 }
 
-div {
+.App {
   font-family: "Montserrat", sans-serif;
 }
 

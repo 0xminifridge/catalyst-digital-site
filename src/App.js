@@ -1,19 +1,34 @@
-import './App.css';
-import Hero from "./Components/Hero/Hero";
-import Navbar from './Components/Navbar/Navbar';
-import AboutHero from './Components/AboutHero/AboutHero';
-import TeamHero from './Components/TeamHero/TeamHero';
-import Contact from './Components/Contact/Contact';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./index.css";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+import Projects from "./Components/Projects";
+import Services from "./Components/Services";
+import Home from "./Components/Home";
 
-function App() {
+export default function App() {
+  const Routing = () => {
+    return (
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/services" component={Services} />
+        </Switch>
+        <Footer />
+      </Router>
+    );
+  };
+
   return (
-    <div className="App">
-      <Hero/>
-      <AboutHero/>
-      <TeamHero/>
-    </div>
+    <>
+      <Router>
+        <Routing />
+      </Router>
+    </>
   );
 }
-
-export default App;
