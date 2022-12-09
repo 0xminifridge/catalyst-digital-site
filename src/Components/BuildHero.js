@@ -6,9 +6,12 @@ export default function BuildHero() {
           <h1 class="font-medium text-xl md:text-4xl">
             Build your NFT projects and NFT integrations with our services
           </h1>
-          <button class="rounded-lg border-2 border-gray-800 px-4 py-2 bg-gray-800 my-4 text-sm md:text-lg font-medium hover:bg-cd-green hover:text-gray-800">
+          <a
+            href="/services"
+            class="rounded-lg border-2 border-gray-800 px-4 py-2 bg-gray-800 my-4 text-sm md:text-lg font-medium hover:bg-cd-green hover:text-gray-800"
+          >
             Services and Offerings
-          </button>
+          </a>
         </div>
       </div>
     </>
