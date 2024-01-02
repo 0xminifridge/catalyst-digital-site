@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <BuildHero />
+      {/* <BuildHero />
       <About />
-      <TeamHero />
+      <TeamHero /> */}
     </>
   );
 }

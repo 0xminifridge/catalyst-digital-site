@@ -5,9 +5,9 @@ export default function Hero() {
         <div class="text-white flex justify-center flex-col w-full h-full">
           <div class="m-auto flex flex-col justify-center">
             <h1 class="text-3xl md:text-7xl m-auto p-2">Catalyst Digital</h1>
-            <p class="text-xl m-auto text-gray-600">
+            {/* <p class="text-xl m-auto text-gray-600">
               Innovating the NFT Ecosystem
-            </p>
+            </p> */}
           </div>
           <div class="align-bottom">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
