@@ -15,9 +15,9 @@ export default function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/contact" component={Contact} />
+          {/* <Route path="/contact" component={Contact} />
           <Route path="/projects" component={Projects} />
-          <Route path="/services" component={Services} />
+          <Route path="/services" component={Services} /> */}
         </Switch>
         <Footer />
       </Router>
